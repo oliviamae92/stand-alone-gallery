@@ -10,28 +10,37 @@ header {
 }
 
 
+
 /* Gallery Styling */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-figure {
-  background: #eee;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 1em;
-  width: 20em;
+figure img {
+    width: 100px;
+}
+
+figure{
+    background-color: aquamarine;
+    padding: 20px;
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .lg-backdrop {
-    background: rgba(255,255,255,1);
+    background: magenta;
 }
 
 .lg-image {
     box-shadow: 0 0 30px #333;
+}
+
+/* Captions*/
+caption {
+    display: none;
 }
 
 /********************
@@ -44,6 +53,10 @@ MEDIA QUERIES
   body {
        background: red;
   }
+    
+    figure{
+        width: 100%
+    }
   
 }
 
@@ -55,6 +68,10 @@ MEDIA QUERIES
        background: green;
   }
 
+    figure{
+        width: 50%
+    }
+    
 }
 
 /* Desktop: 1280px = 80em */
@@ -65,4 +82,13 @@ MEDIA QUERIES
        background: blue;
   }
 
+figure{
+        width: 30%
+    }
+
+/* Main Container */
+    main {
+    margin: auto;
+    width: 90%;
+    }
 }

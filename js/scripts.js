@@ -2,7 +2,7 @@
 
 // Store & Generate Number
 var maxRand = 3;
-var numRand = Math.floor( Math.random() * maxRand );
+var numRand = Math.floor(Math.random() * maxRand);
 //console.log(numRand);
 
 // Store images
@@ -15,5 +15,7 @@ $('header img').attr('src', eval('img' + numRand) );
 
 // Activate Gallery
 $('figure').lightGallery({
-    selector: 'a'
+    selector: 'a',
+    thumbnail: true,
 });
+
