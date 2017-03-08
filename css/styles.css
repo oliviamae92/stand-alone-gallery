@@ -3,7 +3,36 @@ YOUR STYLES
 *******************/
 
 
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+}
 
+
+/* Gallery Styling */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+figure {
+  background: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1em;
+  width: 20em;
+}
+
+.lg-backdrop {
+    background: rgba(255,255,255,1);
+}
+
+.lg-image {
+    box-shadow: 0 0 30px #333;
+}
 
 /********************
 MEDIA QUERIES
@@ -11,10 +40,9 @@ MEDIA QUERIES
 /* Mobile: 320px = 20em */
 @media screen and (min-width: 20em) { 
 
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Mobile Size";
+  /* Diagnostic Styling. */
+  body {
+       background: red;
   }
   
 }
@@ -22,10 +50,9 @@ MEDIA QUERIES
 /* Tablet:  768px = 160em */
 @media screen and (min-width: 48em)  {
 
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Tablet Size";
+  /* Diagnostic Styling. */
+  body {
+       background: green;
   }
 
 }
@@ -33,10 +60,9 @@ MEDIA QUERIES
 /* Desktop: 1280px = 80em */
 @media screen and (min-width: 80em) { 
   
-  /* Diagnostic Styling. Delete When Done. */
-  body:before {
-       background: yellow;
-       content: "Desktop Size";
+  /* Diagnostic Styling. */
+  body {
+       background: blue;
   }
 
 }
